@@ -1,4 +1,5 @@
 import './App.css';
+import Card from './components/Card';
 
 function App() {
 
@@ -32,6 +33,12 @@ function App() {
   return (
     <div className="App">
       <h1>Hotel webpage</h1>
+      <section className="cards">
+        <Card client={clients[0]}>{clients[0].name}</Card>
+        <Card client={clients[1]}>{clients[1].name}</Card>
+        <Card client={clients[2]}>{clients[2].name}</Card>
+        <Card client={clients[3]}>{clients[3].name}</Card>
+      </section>
     </div>
   );
 }
